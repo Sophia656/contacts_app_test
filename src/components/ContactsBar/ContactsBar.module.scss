@@ -1,0 +1,18 @@
+@import '../../styles/styles.scss';
+
+.appbar {
+    padding: 0 10vw;
+    background: var(--bg-wrapper-bar-and-modal);
+}
+.callicon {
+    color: var(--blue-gray);
+    margin-right: 1.5vw;
+}
+.typography {
+    flex-grow: 1;
+    color: var(--blue-gray);
+    text-shadow: var(--text-shadow-bar);
+    font-weight: bold;
+    background: var(--bg-bar-strip);
+    display: block;
+}

@@ -2,7 +2,7 @@ import { createSlice} from '@reduxjs/toolkit';
 import { ILogin } from '../models/ILogin';
 
 const initialState: ILogin = {
-    isAuth: false,
+    isAuth: true,
     error: ''
 }
 

@@ -1,0 +1,35 @@
+@import '../../styles/styles.scss';
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--bg-login);
+}
+.box {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    margin: 1px;
+    background: var(--yellow);
+}
+.avatar__icon {
+    color: var(--blue);
+}
+.typography {
+    color: var(--color-login-text);
+}
+.button__enter {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    background: var(--blue-gray);
+}
+.error {
+    background: transparent;
+    color: var(--color-login-error);
+}

@@ -1,0 +1,16 @@
+@import '../assets/index.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+html {
+    font-size: 16px;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    background: linear-gradient(to left, #375e68, #5691a0, #c2b995 95%);
+}

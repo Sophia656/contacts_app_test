@@ -12,7 +12,7 @@ module.exports = {
         clean: true
     },
     resolve: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: [".ts", ".tsx", ".js", ".css", ".scss"],
     },
     devServer: {
         port: 3000
@@ -29,9 +29,10 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     MiniCssExtractPlugin.loader,
+                    { loader: "css-modules-typescript-loader"},
                     {
                         loader: 'css-loader',
-                        options: { sourceMap: true }
+                        options: { sourceMap: true, modules: true }
                     }, {
                         loader: 'postcss-loader',
                         options: { 
