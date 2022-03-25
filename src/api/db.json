@@ -1,0 +1,68 @@
+{
+    "contacts": [
+      {
+        "name": "Maria",
+        "phone": 6767676888,
+        "id": 5
+      },
+      {
+        "name": "Nastya",
+        "phone": 7775553300000,
+        "id": 2
+      },
+      {
+        "name": "Kate",
+        "phone": 7775553300000,
+        "id": 3
+      },
+      {
+        "name": "Maksim",
+        "phone": 66554433,
+        "id": 6
+      },
+      {
+        "name": "Misha",
+        "phone": 112233,
+        "id": 7
+      },
+      {
+        "name": "Vasya",
+        "phone": 334455,
+        "id": 8
+      },
+      {
+        "name": "Katherine",
+        "phone": 67878,
+        "id": 10
+      },
+      {
+        "name": "Tanya",
+        "phone": 536475,
+        "id": 13
+      },
+      {
+        "name": "Mark",
+        "phone": 5378297,
+        "id": 14
+      },
+      {
+        "name": "Lilia",
+        "phone": 728476,
+        "id": 15
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "login": "admin",
+        "password": "1234",
+        "name": "Vasya"
+      },
+      {
+        "id": 2,
+        "login": "user",
+        "password": "5678",
+        "name": "Petya"
+      }
+    ]
+  }
