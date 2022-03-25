@@ -11,10 +11,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FC } from 'react';
-import s from './LoginPage.module.scss'; 
-// const s = require('./LoginPage.module.scss');
-
-
+import s from './LoginPage.module.css';
 
 const LoginPage: FC = () => {
     const theme = createTheme();
@@ -37,7 +34,7 @@ const LoginPage: FC = () => {
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box className={s.box}>
-          <Avatar className={s.avatar} sx={{ m: 1}}>
+          <Avatar sx={{ m: 1}} className={s.avatar}>
             <LockOutlinedIcon className={s.avatar__icon} />
           </Avatar>
           <Typography className={s.typography} component="h1" variant="h5">

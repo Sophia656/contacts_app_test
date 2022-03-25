@@ -2,7 +2,7 @@ module.exports = {
     plugins: [
         require('autoprefixer'),
         require('css-mqpacker'),
-        require('cssnext'),
+        require('postcss-cssnext'),
         require('cssnano')({
             preset: [
                 'default', {

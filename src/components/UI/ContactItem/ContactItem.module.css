@@ -1,0 +1,21 @@
+@import '../../../assets/index.css';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.list__wrapper {
+    width: 80%;
+    height: 10vh;
+    color: var(--gark-blue-gray);
+    border-bottom: var(--item-border);
+}
+.btn__delete {
+    color: var(--gark-blue-gray);
+    background: var(--bg-item);
+}
+.avatar {
+    background: var(--blue-gray);
+    color: var(--light-yellow);
+}

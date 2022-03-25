@@ -5,10 +5,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import { FC } from 'react';
 import { Search, SearchIconWrapper, StyledInputBase } from './StyledContactsBar';
 import CallIcon from '@mui/icons-material/Call';
-import ModalCreate from '../UI/ModalForm/ModalCreate';
+import ModalCreate from '../UI/ModalForm/ModalCreate/ModalCreate';
 import Logout from '../Logout/Logout';
-import s from './ContactsBar.module.scss';
 import React from 'react';
+import s from './ContactsBar.module.css';
 
 interface ContacBarProps {
     searchString: string,

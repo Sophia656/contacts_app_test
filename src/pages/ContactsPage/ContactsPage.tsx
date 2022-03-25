@@ -6,7 +6,7 @@ import { FC } from 'react';
 import { Table, TableContainer } from '@mui/material';
 import ContactsBar from '../../components/ContactsBar/ContactsBar';
 import ContactsTable from '../../components/ContactsTable/ContactsTable';
-import s from './ContactsPage.module.scss';
+import s from './ContactsPage.module.css';
 
 interface ContactsPageProps {
     data: IContact[],
@@ -19,7 +19,6 @@ const ContactsPage: FC = () => {
     const { data: contacts, isLoading, error} = contactAPI.useFetchAllContactsQuery<ContactsPageProps>([]);
     const [currentContacts, setCurrentContacts] = useState<IContact[]>([]) // for search
 
-console.log(isLoading)
     // Search contacts
     const [searchString, setSearchString] = useState('')
     function unique(arr: IContact[]) {

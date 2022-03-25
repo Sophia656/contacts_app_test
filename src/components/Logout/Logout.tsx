@@ -3,6 +3,7 @@ import { FC } from 'react';
 import { useAppDispatch } from '../../redux/hooks';
 import { loginSlice } from '../../redux/store/loginSlice';
 import LogoutIcon from '@mui/icons-material/Logout';
+import s from './Logout.module.css';
 
 const Logout: FC = () => {
     const {logout} = loginSlice.actions
@@ -14,7 +15,7 @@ const Logout: FC = () => {
     }
 
     return (
-        <LogoutIcon sx={{m: '0 -5vw 0 2vw', color: '#375e68', background: '#5691a0'}} onClick={handleExit} />
+        <LogoutIcon className={s.icon} onClick={handleExit} />
     );
 };
 

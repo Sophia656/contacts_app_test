@@ -1,0 +1,7 @@
+@import '../../assets/index.css';
+
+.icon {
+    margin: 0 -5vw 0 2vw;
+    color: var(--blue-gray);
+    background: var(--blue);
+}

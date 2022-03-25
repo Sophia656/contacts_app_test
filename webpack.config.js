@@ -9,10 +9,11 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "index.js",
+        publicPath: '/',
         clean: true
     },
     resolve: {
-        extensions: [".ts", ".tsx", ".js", ".css", ".scss"],
+        extensions: [".ts", ".tsx", ".js", ".css"],
     },
     devServer: {
         port: 3000
@@ -25,7 +26,7 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
-                test: /\.(css|scss)$/,
+                test: /\.(css)$/,
                 exclude: /node_modules/,
                 use: [
                     MiniCssExtractPlugin.loader,
@@ -39,11 +40,10 @@ module.exports = {
                             sourceMap: true, 
                             postcssOptions: {
                                 config: path.resolve(__dirname, "./postcss.config.js"),
+                                data: '@import "./src/assets/index.css";',
+                                includePaths: [__dirname, "./src/assets/"]
                             },
                         }
-                    }, {
-                        loader: 'sass-loader',
-                        options: { sourceMap: true }
                     }
                 ]
             },
@@ -59,7 +59,7 @@ module.exports = {
         new HTMLWebpackPlugin({template: "./public/index.html"}),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: "[name].css",
+            filename: "main.css",
         })
     ],
 }

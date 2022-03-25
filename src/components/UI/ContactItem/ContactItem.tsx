@@ -11,7 +11,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { AccountCircle } from '@mui/icons-material';
 import { contactAPI } from '../../../redux/store/contactApi';
 import { useState } from 'react';
-import ModalUpdate from '../ModalForm/ModalUpdate';
+import ModalUpdate from '../ModalForm/ModalUpdate/ModalUpdate';
+import s from './ContactItem.module.css';
 
 interface ContactItemProps {
     contact: IContact,
@@ -31,12 +32,12 @@ const ContactItem: FC<ContactItemProps> = ({contact}) => {
     }
 
     return (
-        <List dense={dense} sx={{display: 'flex', justifyContent: 'center', padding: 0}}>
+        <List dense={dense} sx={{bg: 'transparent'}} className={s.wrapper}>
             <ListItem
-                sx={{width: '80%', height: '10vh', color: 'rgb(5, 31, 39)', borderBottom: '1px solid #83969b'}}
+            className={s.list__wrapper}
                 secondaryAction={
                 <IconButton
-                sx={{color: 'rgb(5, 31, 39)', background: 'radial-gradient( #c2b995 10%, #5691a0 15%, #375e68 95%)'}}
+                className={s.btn__delete}
                 onClick={handleRemove}
                 color="primary"
                 edge="end"
@@ -47,7 +48,7 @@ const ContactItem: FC<ContactItemProps> = ({contact}) => {
                 }
                 >
                 <ListItemAvatar>
-                <Avatar sx={{background: '#375e68', color: '#e6dcbc'}}>
+                <Avatar className={s.avatar}>
                     <AccountCircle />
                 </Avatar>
                 </ListItemAvatar>
