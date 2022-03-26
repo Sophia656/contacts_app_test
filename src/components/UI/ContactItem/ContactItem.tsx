@@ -3,17 +3,13 @@ import { IContact } from '../../../redux/models/IContact';
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
-import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { AccountCircle } from '@mui/icons-material';
 import { contactAPI } from '../../../redux/store/contactApi';
 import { useState } from 'react';
 import ModalUpdate from '../ModalForm/ModalUpdate/ModalUpdate';
 import s from './ContactItem.module.css';
-import { createTheme, ThemeProvider } from '@mui/material';
 import MyAvatar from '../avatar/MyAvatar';
 
 interface ContactItemProps {

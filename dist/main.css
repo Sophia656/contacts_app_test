@@ -1,0 +1,217 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/assets/reset.css ***!
+  \****************************************************************************************************/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*!*******************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/assets/variable.css ***!
+  \*******************************************************************************************************/
+:root {
+    --text-shadow-bar: 1px 1px 1px #c2b995, 2px 1px 1px #5691a0, 1px 1px 2px #5691a0, 1px 2px 1px #5691a0;
+    --root-bg: linear-gradient(to left, #375e68, #5691a0, #c2b995 95%);
+    --bg-wrapper-bar-and-modal: linear-gradient(to left, #5691a0, #c2b995);
+    --bg-bar-strip: linear-gradient(to right, #b8b29c, #83969b, #375e68);
+
+    --item-border: 1px solid #83969b;
+    --bg-item: radial-gradient( #c2b995 10%, #5691a0 15%, #375e68 95%);
+
+    --m-modal: 5vh 0 5vh 13vw;
+
+    --cl-modalUpdate: radial-gradient(#375e68, #5691a0, #c2b995 95%);
+
+    --bg-login: linear-gradient(#375e68, #5691a0, #c2b995 95%);
+
+    --light-yellow: #e6dcbc;
+    --yellow: #c2b995;
+    --blue: #5691a0;
+    --light-blue-gray: #83969b;
+    --blue-gray: #375e68;
+    --gark-blue-gray: rgb(5, 31, 39);
+    --color-login-text: #314b52;
+    --color-login-error: #c23521;
+}
+/*!************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/assets/defaultstyles.css ***!
+  \************************************************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #ix3DnDbCyHuvKWhY7p4F {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html {
+    font-size: 16px;
+    font-family: 'M PLUS 1 Code', sans-serif;
+    background: linear-gradient(to left, #375e68, #5691a0, #c2b995 95%);
+  }
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./src/assets/index.css ***!
+  \****************************************************************************************************/
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/UI/ModalForm/ModalCreate/ModalCreate.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.pJpyB57qj14h6DeuM5AB{background:var(--blue-gray);color:#fff;height:6.5vh}
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/Logout/Logout.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+.XjFweEsYDmw5HZq4s_sw{background:var(--blue);color:var(--blue-gray);margin:0 -5vw 0 2vw}
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/ContactsBar/ContactsBar.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.duWloGHpMpGciX1rcRue{background:var(--bg-wrapper-bar-and-modal);padding:0 7vw}.ZYIqdeV4xhK__UFfT3j7{margin-right:1.5vw}.ZYIqdeV4xhK__UFfT3j7,.wgSQOEL3cgQTcjagI2er{color:var(--blue-gray)}.wgSQOEL3cgQTcjagI2er{-webkit-box-flex:1;-ms-flex-positive:1;background:var(--bg-bar-strip);display:block;flex-grow:1;font-weight:700;text-shadow:var(--text-shadow-bar)}
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/UI/ModalForm/ModalUpdate/ModalUpdate.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.v0p8j48pn6rTn7PThEBa{cursor:pointer;margin-right:2vw}
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/UI/ContactItem/ContactItem.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+.IRTVGGuW7ldHBUoXsP_O{-webkit-box-pack:center;-ms-flex-pack:center;display:-webkit-box;display:-ms-flexbox;display:flex;justify-content:center;padding:0}.GJBwpUjCWBTRa9VrHKU6{border-bottom:var(--item-border);color:var(--gark-blue-gray);height:10vh;width:80%}.CSfgOdMMGtcALi0zkGI4{background:var(--blue-gray);color:var(--light-yellow)}
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/components/ContactsTable/ContactsTable.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.fZ_hTO1oPldUIyZXLy6m{background:transparent;height:100%;margin-top:7.8vh;width:100%}
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/pages/ContactsPage/ContactsPage.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+.Qjf2Yjhnhzf3AgD5vgsr{padding:0 7vw;width:100vw}.j3uTvDo_hl0wAC7R11AN{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.gimIIz6IiPst9izJfxY4,.j3uTvDo_hl0wAC7R11AN{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}.gimIIz6IiPst9izJfxY4{-webkit-box-pack:center;-ms-flex-pack:center;height:100vh;justify-content:center;width:100vw}
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/pages/LoginPage/LoginPage.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.GfFNRGukc5I7KeLmdbgM{-webkit-box-pack:center;-ms-flex-pack:center;background:var(--bg-login);height:100vh;justify-content:center;width:100vw}.G1ep0O2uFMYiWjli0007,.GfFNRGukc5I7KeLmdbgM{-webkit-box-align:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex}.G1ep0O2uFMYiWjli0007{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;margin-top:8px}._4CcTyTLn09gMrDiU1QcN{margin:1px}.Uo2W8_5e2qPjZBGRzoHo{color:var(--blue)}.qFJsm9eFkh3RekJBmqKg{color:var(--color-login-text)}.iHKwgGYQzWbMkvdRzIef{margin-bottom:2px;margin-top:3px}
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-modules-typescript-loader/index.js!./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./src/assets/index.css ***!
+  \********************************************************************************************************************************************************************************************************************************/
+

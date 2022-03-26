@@ -3,7 +3,7 @@ import { contactAPI } from '../../redux/store/contactApi';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { FC } from 'react';
-import { Table, TableContainer } from '@mui/material';
+import { CircularProgress, Table, TableContainer } from '@mui/material';
 import ContactsBar from '../../components/ContactsBar/ContactsBar';
 import ContactsTable from '../../components/ContactsTable/ContactsTable';
 import s from './ContactsPage.module.css';
@@ -45,9 +45,14 @@ const ContactsPage: FC<AuthProps> = ({resultId, setIdResult}) => {
 
 
     return (
+        isLoading
+        ?
+        <div className={s.loading__wrapper}>
+            <CircularProgress sx={{w: '10vw', h: '10vw'}} />
+        </div>
+        :
             <div className={s.wrapper}>
                 <TableContainer>
-                
                     <Table className={s.table}>
                         <ContactsBar
                          resultId={resultId}

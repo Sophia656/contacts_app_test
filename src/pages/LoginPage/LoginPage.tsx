@@ -39,6 +39,7 @@ const LoginPage: FC<LoginPageProps> = ({resultId, setIdResult}) => {
     const {loginFail, loginSuccess} = loginSlice.actions
     const dispatch = useAppDispatch()
 
+    // validation check
     const handleSubmit = (event: React.MouseEvent) => {
         event.preventDefault()
         const even = (element: IUser) => element.login === currentLogin && element.password === currentPassword
