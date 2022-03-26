@@ -5,9 +5,7 @@ import { useLocalStorage } from './components/hooks/useLocalStorage';
 const styles = require('./assets/index.css')
 
 function App() {
-const [resultId, setIdResult] = useLocalStorage('resultId','false');
-
-console.log(resultId)
+    const [resultId, setIdResult] = useLocalStorage('resultId','false');
 
   return (
     <div>

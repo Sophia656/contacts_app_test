@@ -7,5 +7,3 @@
       npm start
       login: admin
       password: 1234
-
-webpack + postcss + typescript + react + matelial ui

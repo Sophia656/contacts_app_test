@@ -1,6 +1,6 @@
 import React from 'react';
 import { FC } from 'react';
-import { useAppDispatch } from '../../redux/hooks';
+import { useAppDispatch} from '../../redux/hooks';
 import { loginSlice } from '../../redux/store/loginSlice';
 import LogoutIcon from '@mui/icons-material/Logout';
 import s from './Logout.module.css';
