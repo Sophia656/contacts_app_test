@@ -1,1 +1,9 @@
-# contacts_app_test
+## contacts_app_test
+
+
+      git clone https://github.com/Sophia656/contacts_app_test.git
+      cd contacts_app_test
+      npm i
+      npm start
+      login: admin
+      password: 1234
