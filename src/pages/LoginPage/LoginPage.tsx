@@ -13,7 +13,13 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { FC } from 'react';
 import s from './LoginPage.module.css';
 
-const LoginPage: FC = () => {
+interface LoginPageProps {
+    resultId: boolean,
+    setIdResult: (resultId: boolean) => void
+}
+
+
+const LoginPage: FC<LoginPageProps> = ({resultId, setIdResult}) => {
     const theme = createTheme();
     const {data: users} = usersAPI.useFetchAllUsersQuery('');
     const [currentLogin, setCurrentLogin] = useState('');
@@ -25,7 +31,7 @@ const LoginPage: FC = () => {
     const handleSubmit = (event: React.MouseEvent) => {
         event.preventDefault()
         const even = (element: IUser) => element.login === currentLogin && element.password === currentPassword
-        users?.some(even) === true ? dispatch(loginSuccess()) : dispatch(loginFail('error'))
+        users?.some(even) === true ? dispatch(loginSuccess()) && setIdResult(!resultId) : dispatch(loginFail('error'))
     }
     
     return (

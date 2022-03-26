@@ -14,8 +14,12 @@ interface ContactsPageProps {
     isLoading: boolean,
     error: any,
 }
+interface AuthProps {
+    resultId: boolean,
+    setIdResult: (resultId: boolean) => void
+}
 
-const ContactsPage: FC = () => {
+const ContactsPage: FC<AuthProps> = ({resultId, setIdResult}) => {
     const { data: contacts, isLoading, error} = contactAPI.useFetchAllContactsQuery<ContactsPageProps>([]);
     const [currentContacts, setCurrentContacts] = useState<IContact[]>([]) // for search
 
@@ -45,6 +49,8 @@ const ContactsPage: FC = () => {
                 
                 <Table className={s.table}>
                     <ContactsBar
+                     resultId={resultId}
+                     setIdResult={setIdResult}
                     searchString={searchString}
                     setSearchString={setSearchString}
                     />

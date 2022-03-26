@@ -13,9 +13,11 @@ import s from './ContactsBar.module.css';
 interface ContacBarProps {
     searchString: string,
     setSearchString: (searchString: string) => void,
+    resultId: boolean,
+    setIdResult: (resultId: boolean) => void
 }
 
-const ContactBar: FC<ContacBarProps> = ({searchString, setSearchString}) => {
+const ContactBar: FC<ContacBarProps> = ({searchString, setSearchString, resultId, setIdResult}) => {
 
     return (
         <AppBar position="fixed" className={s.appbar}>
@@ -42,7 +44,7 @@ const ContactBar: FC<ContacBarProps> = ({searchString, setSearchString}) => {
                 onChange={e => setSearchString(e.target.value)}
                 />
             </Search>
-            <Logout />
+            <Logout resultId={resultId} setIdResult={setIdResult} />
             </Toolbar>
         </AppBar>
     );

@@ -5,12 +5,18 @@ import { loginSlice } from '../../redux/store/loginSlice';
 import LogoutIcon from '@mui/icons-material/Logout';
 import s from './Logout.module.css';
 
-const Logout: FC = () => {
+interface ILogout {
+    resultId: boolean,
+    setIdResult: (resultId: boolean) => void
+}
+
+const Logout: FC<ILogout> = ({resultId, setIdResult}) => {
     const {logout} = loginSlice.actions
     const dispatch = useAppDispatch()
 
     const handleExit = () => {
         dispatch(logout())
+        setIdResult(!resultId)
         localStorage.clear()
     }
 
