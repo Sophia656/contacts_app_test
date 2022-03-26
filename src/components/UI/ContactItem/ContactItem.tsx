@@ -13,10 +13,13 @@ import { contactAPI } from '../../../redux/store/contactApi';
 import { useState } from 'react';
 import ModalUpdate from '../ModalForm/ModalUpdate/ModalUpdate';
 import s from './ContactItem.module.css';
+import { createTheme, ThemeProvider } from '@mui/material';
+import MyAvatar from '../avatar/MyAvatar';
 
 interface ContactItemProps {
     contact: IContact,
 }
+
 
 const ContactItem: FC<ContactItemProps> = ({contact}) => {
     const [dense, setDense] = useState(false);
@@ -32,12 +35,11 @@ const ContactItem: FC<ContactItemProps> = ({contact}) => {
     }
 
     return (
-        <List dense={dense} sx={{bg: 'transparent'}} className={s.wrapper}>
+        <List dense={dense} className={s.wrapper}>
             <ListItem
             className={s.list__wrapper}
-                secondaryAction={
+            secondaryAction={
                 <IconButton
-                className={s.btn__delete}
                 onClick={handleRemove}
                 color="primary"
                 edge="end"
@@ -47,11 +49,7 @@ const ContactItem: FC<ContactItemProps> = ({contact}) => {
                 </IconButton>
                 }
                 >
-                <ListItemAvatar>
-                <Avatar className={s.avatar}>
-                    <AccountCircle />
-                </Avatar>
-                </ListItemAvatar>
+                    <MyAvatar />
                 <ListItemText
                 primary={contact.name}
                 secondary={contact.phone}

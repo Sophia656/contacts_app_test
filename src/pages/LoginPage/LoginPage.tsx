@@ -18,9 +18,20 @@ interface LoginPageProps {
     setIdResult: (resultId: boolean) => void
 }
 
+const errorStyle = {background: 'transparent', color: '#c23521'}
+const themeLoginPage = createTheme({
+    palette: {
+        primary: {
+            main: '#375e68',
+        },
+        secondary: {
+            main: '#c2b995'
+        }
+    }
+});
+
 
 const LoginPage: FC<LoginPageProps> = ({resultId, setIdResult}) => {
-    const theme = createTheme();
     const {data: users} = usersAPI.useFetchAllUsersQuery('');
     const [currentLogin, setCurrentLogin] = useState('');
     const [currentPassword, setCurrentPassowrd] = useState('');
@@ -36,58 +47,58 @@ const LoginPage: FC<LoginPageProps> = ({resultId, setIdResult}) => {
     
     return (
         <div className={s.wrapper}>
-            <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box className={s.box}>
-          <Avatar sx={{ m: 1}} className={s.avatar}>
-            <LockOutlinedIcon className={s.avatar__icon} />
-          </Avatar>
-          <Typography className={s.typography} component="h1" variant="h5">
-            Enter
-          </Typography>
-          <Box component="form" noValidate sx={{ mt: 1}}>
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Login"
-              name="login"
-              autoComplete="login"
-              autoFocus
-              value={currentLogin}
-              onChange={e => setCurrentLogin(e.target.value)}
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              value={currentPassword}
-              onChange={e => setCurrentPassowrd(e.target.value)}
-            />
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              className={s.button__enter}
-              onClick={handleSubmit}
-            >
-              ENTER
-            </Button>
-            {error && <Alert severity="error" className={s.error}>
-                <AlertTitle>Error</AlertTitle>
-                Invalid username or password
-            </Alert>}
-          </Box>
-        </Box>
-      </Container>
-    </ThemeProvider>
+            <ThemeProvider theme={themeLoginPage}>
+                <Container component="main" maxWidth="xs">
+                    <CssBaseline />
+                    <Box className={s.box}>
+                    <Avatar sx={{ m: 1, bgcolor: '#c2b995'}} className={s.avatar}>
+                        <LockOutlinedIcon className={s.avatar__icon} />
+                    </Avatar>
+                    <Typography className={s.typography} component="h1" variant="h5">
+                        Enter
+                    </Typography>
+                    <Box component="form" noValidate sx={{ mt: 1}}>
+                        <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        id="email"
+                        label="Login"
+                        name="login"
+                        autoComplete="login"
+                        autoFocus
+                        value={currentLogin}
+                        onChange={e => setCurrentLogin(e.target.value)}
+                        />
+                        <TextField
+                        margin="normal"
+                        required
+                        fullWidth
+                        name="password"
+                        label="Password"
+                        type="password"
+                        id="password"
+                        autoComplete="current-password"
+                        value={currentPassword}
+                        onChange={e => setCurrentPassowrd(e.target.value)}
+                        />
+                        <Button
+                        type="submit"
+                        fullWidth
+                        variant="contained"
+                        className={s.button__enter}
+                        onClick={handleSubmit}
+                        >
+                        ENTER
+                        </Button>
+                        {error && <Alert severity="error" sx={errorStyle}>
+                            <AlertTitle>Error</AlertTitle>
+                            Invalid username or password
+                        </Alert>}
+                    </Box>
+                    </Box>
+                </Container>
+            </ThemeProvider>
         </div>
     );
 };

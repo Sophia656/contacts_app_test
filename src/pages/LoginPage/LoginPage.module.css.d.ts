@@ -5,7 +5,6 @@ interface CssExports {
   'avatar__icon': string;
   'box': string;
   'button__enter': string;
-  'error': string;
   'typography': string;
   'wrapper': string;
 }

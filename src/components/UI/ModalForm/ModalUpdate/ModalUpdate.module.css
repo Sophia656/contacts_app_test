@@ -1,7 +1,4 @@
-@import '../../../../assets/index.css';
-
 .icon {
     margin-right: 2vw;
     cursor: pointer;
-    color: var(--cl-modalUpdate);
 }

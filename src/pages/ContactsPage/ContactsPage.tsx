@@ -45,21 +45,23 @@ const ContactsPage: FC<AuthProps> = ({resultId, setIdResult}) => {
 
 
     return (
-            <TableContainer className={s.wrapper}>
+            <div className={s.wrapper}>
+                <TableContainer>
                 
-                <Table className={s.table}>
-                    <ContactsBar
-                     resultId={resultId}
-                     setIdResult={setIdResult}
-                    searchString={searchString}
-                    setSearchString={setSearchString}
-                    />
-                    <ContactsTable
-                    contacts={contacts}
-                    currentContacts={currentContacts}
-                    />
-                </Table>
-            </TableContainer>
+                    <Table className={s.table}>
+                        <ContactsBar
+                         resultId={resultId}
+                         setIdResult={setIdResult}
+                        searchString={searchString}
+                        setSearchString={setSearchString}
+                        />
+                        <ContactsTable
+                        contacts={contacts}
+                        currentContacts={currentContacts}
+                        />
+                    </Table>
+                </TableContainer>
+            </div>
     );
 };
 

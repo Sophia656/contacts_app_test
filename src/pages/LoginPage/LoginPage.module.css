@@ -16,7 +16,6 @@
 }
 .avatar {
     margin: 1px;
-    background: var(--yellow);
 }
 .avatar__icon {
     color: var(--blue);
@@ -27,9 +26,5 @@
 .button__enter {
     margin-top: 3px;
     margin-bottom: 2px;
-    background: var(--blue-gray);
-}
-.error {
-    background: transparent;
-    color: var(--color-login-error);
+    /* background: var(--blue-gray); */
 }

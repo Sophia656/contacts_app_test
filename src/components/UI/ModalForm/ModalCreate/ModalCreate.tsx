@@ -20,7 +20,7 @@ const ModalCreate: FC = () => {
 
     return (
         <React.Fragment>
-            <Button onClick={() => setState(true)} className={s.btn__create} variant="outlined">
+            <Button onClick={() => setState(true)} sx={{bgcolor: '#375e68'}} variant="contained">
                 Create Contact
             </Button>
             <Drawer

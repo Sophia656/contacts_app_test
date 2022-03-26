@@ -11,10 +11,6 @@
     color: var(--gark-blue-gray);
     border-bottom: var(--item-border);
 }
-.btn__delete {
-    color: var(--gark-blue-gray);
-    background: var(--bg-item);
-}
 .avatar {
     background: var(--blue-gray);
     color: var(--light-yellow);

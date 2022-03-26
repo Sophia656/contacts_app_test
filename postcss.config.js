@@ -1,8 +1,21 @@
+
+
 module.exports = {
     plugins: [
-        require('autoprefixer'),
         require('css-mqpacker'),
-        require('postcss-cssnext'),
+        require('postcss-cssnext')({
+            browsers: [
+              'last 2 version'
+            ],
+            features: {
+              rem: false,
+              customProperties: {
+                strict: false,
+                warnings: false,
+                preserve: true
+              }
+            }
+          }),
         require('cssnano')({
             preset: [
                 'default', {

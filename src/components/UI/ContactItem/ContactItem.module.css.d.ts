@@ -2,7 +2,6 @@
 // Please do not change this file!
 interface CssExports {
   'avatar': string;
-  'btn__delete': string;
   'list__wrapper': string;
   'wrapper': string;
 }

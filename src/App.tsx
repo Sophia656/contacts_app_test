@@ -7,6 +7,8 @@ const styles = require('./assets/index.css')
 function App() {
 const [resultId, setIdResult] = useLocalStorage('resultId','false')
 
+console.log(resultId)
+
   return (
     <div>
         {resultId ? <ContactsPage resultId={resultId} setIdResult={setIdResult} /> : <LoginPage resultId={resultId} setIdResult={setIdResult} />}

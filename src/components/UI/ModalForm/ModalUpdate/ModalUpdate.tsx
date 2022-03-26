@@ -1,5 +1,5 @@
 import { BorderColor } from '@mui/icons-material';
-import { Button, Dialog, DialogActions, DialogContent, DialogTitle, TextField } from '@mui/material';
+import { Button, createTheme, Dialog, DialogActions, DialogContent, DialogTitle, TextField, ThemeProvider } from '@mui/material';
 import React, { useState } from 'react';
 import { FC } from 'react';
 import { IContact } from '../../../../redux/models/IContact';
@@ -9,6 +9,20 @@ import s from './ModalUpdate.module.css';
 interface ModalUpdateProprs {
     contact: IContact
 }
+
+const themeLogin = createTheme({
+    palette: {
+        primary: {
+            main: '#375e68',
+        },
+        background: {
+            paper: '#fff'
+        },
+        text: {
+            primary: 'rgb(5, 31, 39)'
+        },
+    },
+})
 
 const ModalUpdate: FC<ModalUpdateProprs> = ({contact}) => {
     const [open, setOpen] = useState<boolean>(false)
@@ -26,6 +40,7 @@ const ModalUpdate: FC<ModalUpdateProprs> = ({contact}) => {
 
     return (
         <div>
+            <ThemeProvider theme={themeLogin}>
             <BorderColor className={s.icon} onClick={() => setOpen(true)} />
             <Dialog open={open} onClose={() => setOpen(false)}>
                 <DialogTitle>Change data contact</DialogTitle>
@@ -58,6 +73,7 @@ const ModalUpdate: FC<ModalUpdateProprs> = ({contact}) => {
                     <Button onClick={handleChange}>Save</Button>
                 </DialogActions>
                   </Dialog>
+                  </ThemeProvider>
         </div>
     );
 };

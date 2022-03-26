@@ -1,9 +1,5 @@
 @import '../../../../assets/index.css';
 
-.btn__create {
-    color: white;
-    background: var(--blue-gray);
-}
 .btn__add {
     color: white;
     background: var(--blue-gray);

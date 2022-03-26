@@ -60,7 +60,6 @@
     "webpack-dev-server": "^4.7.4"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.4",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.1",
     "css-modules-typescript-loader": "^4.0.1",
@@ -73,6 +72,7 @@
     "path": "^0.12.7",
     "postcss": "^8.4.12",
     "postcss-cssnext": "^3.1.1",
+    "postcss-custom-properties-fallback": "^1.0.2",
     "postcss-loader": "^6.2.1",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.8"

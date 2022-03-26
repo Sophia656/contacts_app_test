@@ -1,7 +1,7 @@
 @import '../../assets/index.css';
 
 .appbar {
-    padding: 0 10vw;
+    padding: 0 7vw;
     background: var(--bg-wrapper-bar-and-modal);
 }
 .callicon {

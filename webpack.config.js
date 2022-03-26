@@ -43,7 +43,7 @@ module.exports = {
                                 data: '@import "./src/assets/index.css";',
                                 includePaths: [__dirname, "./src/assets/"]
                             },
-                        }
+                        },
                     }
                 ]
             },
@@ -62,4 +62,5 @@ module.exports = {
             filename: "main.css",
         })
     ],
+    
 }
